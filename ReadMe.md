@@ -1,5 +1,3 @@
-# What's this?
-
 # Requirements
 
 - [Node.js](https://nodejs.org/en/)  
@@ -7,3 +5,6 @@
 
 # Usage
 
+```
+node hentai-traverser.js (start url)
+```
