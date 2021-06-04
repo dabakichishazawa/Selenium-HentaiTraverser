@@ -177,17 +177,19 @@ var obj_webDriver;
 
     func_showProgress();
     bl_watching = true;
-    setTimeout(func_showProgressRept, 100);
+    func_showProgressRept();
     
-    
-    function func_showProgressRept(){
+    async function func_showProgressRept(){
+        
+        await func_sleep(100);
+
         if(bl_watching){
             // 前回状態の削除
             //todo 上書きする前に消す
             process.stdout.write('\033[' + objarr_dlRequests.length + 'A');
 
             func_showProgress();
-            setTimeout(func_showProgressRept, 100);
+            func_showProgressRept();
         }
     }
     
@@ -210,6 +212,14 @@ var obj_webDriver;
     
         }
     }
+
+    function func_sleep(int_mSec) {
+        return new Promise(function(resolve) {
+     
+           setTimeout(function() {resolve()}, int_mSec);
+     
+        })
+     }
 
 })();
 
