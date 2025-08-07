@@ -4,7 +4,7 @@
   "description": "- [Node.js](https://nodejs.org/en/)  \r - [Chrome](https://www.google.com/intl/en_us/chrome/) and [ChromeDriver](https://chromedriver.chromium.org/)",
   "main": "hentai-traverser.js",
   "dependencies": {
-    "selenium-webdriver": "^4.0.0-alpha.7"
+    "selenium-webdriver": "^4.34.0"
   },
   "devDependencies": {},
   "scripts": {
